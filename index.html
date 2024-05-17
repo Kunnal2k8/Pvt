@@ -62,7 +62,7 @@
         .featured-downloads {
             display: flex;
             justify-content: space-between;
-            flex-wrap: wrap;
+                        flex-wrap: wrap;
         }
 
         .download-item {
@@ -108,6 +108,40 @@
         footer p {
             margin: 0;
         }
+
+        /* Media Queries for Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+            }
+
+            .navbar li {
+                margin: 10px 0;
+            }
+
+            .hero {
+                padding: 50px 20px;
+            }
+
+            .hero h1 {
+                font-size: 2em;
+            }
+
+            .hero p {
+                font-size: 1em;
+            }
+
+            .download-item {
+                flex: 1 1 calc(50% - 20px);
+            }
+        
+
+        @media (max-width: 480px) {
+            .download-item {
+                flex: 1 1 100%;
+            }
+
+        
     </style>
 </head>
 <body>
@@ -134,7 +168,7 @@
             <div class="download-item">
                 <h3>Download 1</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                <a href="Bmw.mp4.zip" class="download-button">Download</a>
+                <a href="#" class="download-button">Download</a>
             </div>
             <div class="download-item">
                 <h3>Download 2</h3>
@@ -145,6 +179,7 @@
                 <h3>Download 3</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 <a href="#" class="download-button">Download</a>
+                                </div>
             </div>
         </div>
     </div>
@@ -154,3 +189,5 @@
     </footer>
 </body>
 </html>
+
+
