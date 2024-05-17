@@ -72,11 +72,7 @@
             flex: 1 1 calc(33.333% - 20px);
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             border-radius: 5px;
-        }
-
-        .download-item img {
-            max-width: 100%;
-            border-radius: 5px;
+            text-align: center;
         }
 
         .download-item h3 {
@@ -85,6 +81,21 @@
 
         .download-item p {
             font-size: 0.9em;
+        }
+
+        .download-button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .download-button:hover {
+            background-color: #45a049;
         }
 
         footer {
@@ -121,19 +132,19 @@
         <h2>Featured Downloads</h2>
         <div class="featured-downloads">
             <div class="download-item">
-                <img src="items/One.zip" alt="Download 1">
                 <h3>Download 1</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#" class="download-button">Download</a>
             </div>
             <div class="download-item">
-                <img src="https://via.placeholder.com/300" alt="Download 2">
                 <h3>Download 2</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#" class="download-button">Download</a>
             </div>
             <div class="download-item">
-                <img src="https://via.placeholder.com/300" alt="Download 3">
                 <h3>Download 3</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <a href="#" class="download-button">Download</a>
             </div>
         </div>
     </div>
